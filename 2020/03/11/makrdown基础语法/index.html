@@ -16,7 +16,7 @@
     <meta name="description" content="" />
     
     <title>
-      Archives2020 - Zhou
+      markdown基础语法 - Zhou
     </title>
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -61,7 +61,7 @@
           主页
         </a>
         
-        <a href="/archives" class="current">
+        <a href="/archives" class="">
           归档
         </a>
         
@@ -115,7 +115,7 @@
             主页
           </a>
           
-          <a href="/archives" class="current">
+          <a href="/archives" class="">
             归档
           </a>
           
@@ -160,52 +160,225 @@
     </div>
     <div id="container">
       <div class="main animated bounceInRight delay-0.7s">
-        <div id="archives">
-    
-        <div class="title">
-            Archives 
-             - 2020
-        </div>
-    
-
-
-
-
-    
-    
-    <section class="wrap">
-        <div class="meta">
-            <a href="/archives/2020" >
-                2020
-            </a>
-        </div>
-        <div class="year">
-            
-            <article class="item">
-            <a href="/2020/03/11/makrdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" title="markdown基础语法">
-                <span>2020/03/11</span>
-                <span>markdown基础语法</span>
-            </a>
-            </article>
-            
-
-
-            <article class="item">
-            <a href="/2020/03/11/%E5%BC%80%E5%A7%8B/" title="开始">
-                <span>2020/03/11</span>
-                <span>开始</span>
-            </a>
-            </article>
-            
-    
-        </div>
-    </section>
+        <article class="post-entry">
+    <div class="header">
       
-<div class="paginator">
-    <span class="page-number current">1</span>
-</div>
-</div>
+      <div class="title">markdown基础语法</div>
+      <div class="meta">
+        <span class="item">
+          <span class="iconfont icon-time-circle"></span>
+          <span>2020/03/11</span>
+        </span>
 
+        
+          <span class="item leancloud-visitors" id="/2020/03/11/makrdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" data-flag-title="markdown基础语法">
+            <span class="iconfont icon-eye1"></span>
+            <span class="leancloud-visitors-count"></span>
+          </span>
+        
+
+         
+        <span class="item">
+          <span class="iconfont icon-folder"></span>
+          <span>
+              
+                
+                  <a href="/categories/markdown">markdown</a>
+                
+              
+          </span>
+        </span>
+        
+        
+         
+          <span class="item">
+            <span class="iconfont icon-tag1"></span>
+            <span>
+                
+                  
+                    <a href="/tags/语法">语法</a>
+                  
+                
+                  
+                    <a href="/tags/markdown">markdown</a>
+                  
+                
+            </span>
+          </span>
+         
+      </div>
+      <div>
+      </div>
+    </div>
+    <html><head></head><body><ul>
+<li><p>标题</p>
+<blockquote>
+<p>#,##,###,####,#####,###### 对应 h1~h6</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>强调</p>
+<blockquote>
+<p>**强调**    <strong>强调</strong></p>
+</blockquote>
+</li>
+<li><p>斜体</p>
+<blockquote>
+<p>*斜体*     <em>斜体</em></p>
+</blockquote>
+</li>
+<li><p>删除</p>
+<blockquote>
+<p>~~删除~~  <del>删除</del></p>
+</blockquote>
+</li>
+<li><p>超链接</p>
+<blockquote>
+<p><code>[链接](http://www.baidu.com)</code>      <a href="http://www.baidu.com" target="_blank" rel="noopener">链接</a></p>
+</blockquote>
+</li>
+<li><p>页内的超链接</p>
+<blockquote>
+<p><code>[链接](#a1)</code>      <a href="#a1">链接</a></p>
+<ul>
+<li>需要在页内跳转的地方加上：<code><a id="a1"></code></li>
+</ul>
+</blockquote>
+</li>
+<li><p>图片显示</p>
+<blockquote>
+<ol>
+<li><p><code>![图片](http://t9.baidu.com/it/u=3363001160,1163944807&fm=79&app=86&f=JPEG?w=1280&h=830)</code> <br></p>
+</li>
+<li><p><code><img src="http://t9.baidu.com/it/u=3363001160,1163944807&fm=79&app=86&f=JPEG?w=100&h=100" width="200" height="200" alt="图片" align="center"></code> <strong>推荐使用</strong></p>
+<a href="http://t9.baidu.com/it/u=3363001160,1163944807&fm=79&app=86&f=JPEG?w=100&h=100" target="_blank" rel="noopener" data-caption="图片" data-fancybox="images"><img src="http://t9.baidu.com/it/u=3363001160,1163944807&fm=79&app=86&f=JPEG?w=100&h=100" alt="图片"></a>
+
+
+</li>
+</ol>
+</blockquote>
+</li>
+<li><p>无序列表</p>
+<blockquote>
+<p><code>- + 空格</code></p>
+</blockquote>
+</li>
+<li><p>引用块</p>
+<blockquote>
+<p><code>> + 空格</code></p>
+</blockquote>
+</li>
+<li><p>行内代码</p>
+<blockquote>
+<p>`hello world`      <code>hello world</code></p>
+</blockquote>
+</li>
+<li><p>代码块</p>
+<blockquote>
+<p>```int a = 0; </p>
+<p>​        System.out.println(“hello world “ + a);</p>
+<p>```</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">int</span> a = <span class="hljs-number">10</span>;<br>System.out.println(<span class="hljs-string">"hello world "</span> + a);<br></code></pre></td></tr></tbody></table></figure>
+</blockquote>
+</li>
+<li><p>表格</p>
+<blockquote>
+<p>`|  a   |  b   |  c   |</p>
+<p>  | :–: | :–: | :–:   |<br>  |  a   |  c   |  d   |<br>  |  a   |  d   |  c   |`</p>
+<table>
+<thead>
+<tr>
+<th align="center">a</th>
+<th align="center">b</th>
+<th align="center">c</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">a</td>
+<td align="center">c</td>
+<td align="center">d</td>
+</tr>
+<tr>
+<td align="center">a</td>
+<td align="center">d</td>
+<td align="center">c</td>
+</tr>
+</tbody></table>
+</blockquote>
+</li>
+<li><p>任务列表</p>
+<blockquote>
+<p><code>[x] 任务，完成</code>   </p>
+<ul>
+<li><input checked disabled type="checkbox"> </li>
+</ul>
+<p><code>[] 任务，未完成</code> </p>
+<ul>
+<li><input disabled type="checkbox"> </li>
+</ul>
+</blockquote>
+</li>
+<li><p>注脚</p>
+<blockquote>
+<p><code>注脚[^1]</code></p>
+<p><code>[^1]:注脚1</code></p>
+</blockquote>
+</li>
+</ul>
+</body></html>
+
+  
+    <div class="post-reward">
+    <div id="reward-button">打赏</div>
+      <div id="qr">
+        <div class="wrap">
+            
+            <div class="bg-wrap">
+              <a href="/images/zhifubao.jpg" target="_block" class="bg" style="background-image:url('/images/zhifubao.jpg')"></a>
+              支付宝
+            </div>
+            
+            
+            <div class="bg-wrap">
+                <a href="/images/weixin.png" target="_block" class="bg" style="background-image:url('/images/weixin.png')"></a>
+              微信
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  
+  <div class="post-guide">
+    <div class="item left">
+        
+    </div>
+    <div class="item right">
+        
+          <a href="/2020/03/11/%E5%BC%80%E5%A7%8B/">开始</a>
+        
+    </div>
+  </div>
+
+  
+
+  <div class="post-copyright">
+    <div class="auth">
+      本文作者：<a href="https://www.zzwox.top">zhou</a>
+    </div>
+    <div class="link">
+      永久链接：<a href="https://www.zzwox.top/2020/03/11/makrdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">https://www.zzwox.top/2020/03/11/makrdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</a>
+    </div>
+    <div class="declare">
+      版权声明：本文首发于<a href="https://www.zzwox.top">zhou</a>的博客，转载请注明出处！
+    </div>
+  </div>
+
+  <div id="comment"></div>
+
+  
+  
+</article>
         <footer>
           <div class="copyright">
             ©2020
