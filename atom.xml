@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Zhou</title>
-  <icon>http://localhost:4000/icon.png</icon>
+  <icon>http://zhouzzz000.github.io/icon.png</icon>
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://localhost:4000/"/>
-  <updated>2020-03-10T08:38:10.198Z</updated>
-  <id>http://localhost:4000/</id>
+  <link href="http://zhouzzz000.github.io/"/>
+  <updated>2020-03-11T01:24:10.211Z</updated>
+  <id>http://zhouzzz000.github.io/</id>
   
   <author>
     <name>zhou</name>
@@ -17,9 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>开始</title>
+    <link href="http://zhouzzz000.github.io/2020/03/11/%E5%BC%80%E5%A7%8B/"/>
+    <id>http://zhouzzz000.github.io/2020/03/11/%E5%BC%80%E5%A7%8B/</id>
+    <published>2020-03-11T01:01:51.000Z</published>
+    <updated>2020-03-11T01:24:10.211Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;开始&quot;&gt;&lt;a href=&quot;#开始&quot; class=&quot;headerlink&quot; title=&quot;开始&quot;&gt;&lt;/a&gt;开始&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Java测试&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;mian&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;br&gt;    System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;hello world!&quot;&lt;/span&gt;);&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="杂记" scheme="http://zhouzzz000.github.io/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://localhost:4000/2020/03/10/hello-world/"/>
-    <id>http://localhost:4000/2020/03/10/hello-world/</id>
+    <link href="http://zhouzzz000.github.io/2020/03/10/hello-world/"/>
+    <id>http://zhouzzz000.github.io/2020/03/10/hello-world/</id>
     <published>2020-03-10T08:38:10.197Z</published>
     <updated>2020-03-10T08:38:10.198Z</updated>
     
