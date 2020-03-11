@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zhou</title>
+  <icon>http://localhost:4000/icon.png</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://localhost:4000/"/>
+  <updated>2020-03-10T08:38:10.198Z</updated>
+  <id>http://localhost:4000/</id>
+  
+  <author>
+    <name>zhou</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://localhost:4000/2020/03/10/hello-world/"/>
+    <id>http://localhost:4000/2020/03/10/hello-world/</id>
+    <published>2020-03-10T08:38:10.197Z</published>
+    <updated>2020-03-10T08:38:10.198Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
