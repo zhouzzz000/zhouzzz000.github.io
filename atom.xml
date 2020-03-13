@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zzwox.top/"/>
-  <updated>2020-03-12T02:44:27.744Z</updated>
+  <updated>2020-03-13T12:51:56.315Z</updated>
   <id>https://www.zzwox.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>redis从海量数据里查询符合条件的数据</title>
+    <link href="https://www.zzwox.top/2020/03/13/redis%E4%BB%8E%E6%B5%B7%E9%87%8F%E6%95%B0%E6%8D%AE%E9%87%8C%E6%9F%A5%E8%AF%A2%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE/"/>
+    <id>https://www.zzwox.top/2020/03/13/redis%E4%BB%8E%E6%B5%B7%E9%87%8F%E6%95%B0%E6%8D%AE%E9%87%8C%E6%9F%A5%E8%AF%A2%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE/</id>
+    <published>2020-03-13T12:38:44.000Z</published>
+    <updated>2020-03-13T12:51:56.315Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;redis从海量数据里查询&quot;&gt;&lt;a href=&quot;#redis从海量数据里查询&quot; class=&quot;headerlink&quot; title=&quot;redis从海量数据里查询&quot;&gt;&lt;/a&gt;&lt;strong&gt;redis从海量数据里查询&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;​        &lt;strong&gt;redis生成海量数据的方法&lt;/strong&gt;：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs bash&quot;&gt;&lt;br&gt;新建a.sh,vim打开a.sh,输入&lt;br&gt;&lt;span class=&quot;hljs-meta&quot;&gt;#!/bin/bash&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;for&lt;/span&gt; ((i=0;i&amp;lt;=2000000;i++))&lt;br&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;do&lt;/span&gt;&lt;br&gt;        &lt;span class=&quot;hljs-built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;set k&lt;span class=&quot;hljs-variable&quot;&gt;$i&lt;/span&gt; v&lt;span class=&quot;hljs-variable&quot;&gt;$i&lt;/span&gt;&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;done&lt;/span&gt;&lt;br&gt;保存退出后执行命令&lt;br&gt;&lt;br&gt;&lt;span class=&quot;hljs-comment&quot;&gt;#: ./a.sh &amp;gt;&amp;gt; redis_test.data&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-comment&quot;&gt;#: time cat redis_test.data | redis-cli --pipe&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;​
+    
+    </summary>
+    
+    
+      <category term="redis" scheme="https://www.zzwox.top/categories/redis/"/>
+    
+    
+      <category term="redis" scheme="https://www.zzwox.top/tags/redis/"/>
+    
+  </entry>
   
   <entry>
     <title>markdown基础语法</title>
