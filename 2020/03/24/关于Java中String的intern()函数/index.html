@@ -16,7 +16,7 @@
     <meta name="description" content="" />
     
     <title>
-      Archives2020/3 - Zhou
+      关于Java中String的intern()函数 - Zhou
     </title>
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -27,6 +27,11 @@
 </head>
   <body>
     <canvas id='pagemap'></canvas>
+    
+    <div id="post-toc" class="animated hiddenToc hide">
+      <span class="title">Toc</span>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于Java中String的intern-函数"><span class="toc-text">关于Java中String的intern()函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#首先讲一下intern-函数的意义（JDK6以上）"><span class="toc-text">首先讲一下intern()函数的意义（JDK6以上）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#这里用代码加注释讲解比较直观"><span class="toc-text">这里用代码加注释讲解比较直观</span></a></li></ol></li></ol>
+    </div>
     
     <div id="fixed-menu-wrap">
       <span class="iconfont icon-sousuo search-box menu-reset"></span>
@@ -61,7 +66,7 @@
           主页
         </a>
         
-        <a href="/archives" class="current">
+        <a href="/archives" class="">
           归档
         </a>
         
@@ -115,7 +120,7 @@
             主页
           </a>
           
-          <a href="/archives" class="current">
+          <a href="/archives" class="">
             归档
           </a>
           
@@ -160,79 +165,112 @@
     </div>
     <div id="container">
       <div class="main animated bounceInRight delay-0.7s">
-        <div id="archives">
-    
-        <div class="title">
-            Archives 
-             - 2020/3
-        </div>
-    
-
-
-
-
-    
-    
-    <section class="wrap">
-        <div class="meta">
-            <a href="/archives/2020" >
-                2020
-            </a>
-        </div>
-        <div class="year">
-            
-            <article class="item">
-            <a href="/2020/03/24/%E5%85%B3%E4%BA%8EJava%E4%B8%ADString%E7%9A%84intern()%E5%87%BD%E6%95%B0/" title="关于Java中String的intern()函数">
-                <span>2020/03/24</span>
-                <span>关于Java中String的intern()函数</span>
-            </a>
-            </article>
-            
-
-
-            <article class="item">
-            <a href="/2020/03/17/redis%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/" title="redis实现分布式锁">
-                <span>2020/03/17</span>
-                <span>redis实现分布式锁</span>
-            </a>
-            </article>
-            
-
-
-            <article class="item">
-            <a href="/2020/03/13/redis%E4%BB%8E%E6%B5%B7%E9%87%8F%E6%95%B0%E6%8D%AE%E9%87%8C%E6%9F%A5%E8%AF%A2%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE/" title="redis从海量数据里查询符合条件的数据">
-                <span>2020/03/13</span>
-                <span>redis从海量数据里查询符合条件的数据</span>
-            </a>
-            </article>
-            
-
-
-            <article class="item">
-            <a href="/2020/03/11/makrdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" title="markdown基础语法">
-                <span>2020/03/11</span>
-                <span>markdown基础语法</span>
-            </a>
-            </article>
-            
-
-
-            <article class="item">
-            <a href="/2020/03/11/%E5%BC%80%E5%A7%8B/" title="开始">
-                <span>2020/03/11</span>
-                <span>开始</span>
-            </a>
-            </article>
-            
-    
-        </div>
-    </section>
+        <article class="post-entry">
+    <div class="header">
       
-<div class="paginator">
-    <span class="page-number current">1</span>
-</div>
-</div>
+      <div class="title">关于Java中String的intern()函数</div>
+      <div class="meta">
+        <span class="item">
+          <span class="iconfont icon-time-circle"></span>
+          <span>2020/03/24</span>
+        </span>
 
+        
+          <span class="item leancloud-visitors" id="/2020/03/24/%E5%85%B3%E4%BA%8EJava%E4%B8%ADString%E7%9A%84intern()%E5%87%BD%E6%95%B0/" data-flag-title="关于Java中String的intern()函数">
+            <span class="iconfont icon-eye1"></span>
+            <span class="leancloud-visitors-count"></span>
+          </span>
+        
+
+         
+        <span class="item">
+          <span class="iconfont icon-folder"></span>
+          <span>
+              
+                
+                  <a href="/categories/java">java</a>
+                
+              
+          </span>
+        </span>
+        
+        
+         
+          <span class="item">
+            <span class="iconfont icon-tag1"></span>
+            <span>
+                
+                  
+                    <a href="/tags/java">java</a>
+                  
+                
+            </span>
+          </span>
+         
+      </div>
+      <div>
+      </div>
+    </div>
+    <html><head></head><body><h1 id="关于Java中String的intern-函数">关于Java中String的intern()函数<a class="post-anchor" href="#关于Java中String的intern-函数"></a></h1><h2 id="首先讲一下intern-函数的意义（JDK6以上）">首先讲一下intern()函数的意义（JDK6以上）<a class="post-anchor" href="#首先讲一下intern-函数的意义（JDK6以上）"></a></h2><blockquote>
+<p>调用intern()方法时，，如果字符串常量池先前已创建出该字符串对象，则返回池中该对象的引用。否则，如果该对象已经存在于java堆中，则将堆中此对象的引用添加到字符串常量池中，并且返回该引用；如果堆中不存在，则在池中创建该字符串并返回其引用。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="这里用代码加注释讲解比较直观">这里用代码加注释讲解比较直观<a class="post-anchor" href="#这里用代码加注释讲解比较直观"></a></h2><figure class="highlight java"><table><tbody><tr><td class="code"><pre><code class="hljs java"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br>     	<span class="hljs-comment">// new String("aa")时；会有如下步骤</span><br>     	<span class="hljs-comment">// 1.将字符常量"aa"放入常量池中</span><br>     	<span class="hljs-comment">// 2.在堆上new一个String对象，值为"aa"，返回其引用</span><br>        String s1 = <span class="hljs-keyword">new</span> String(<span class="hljs-string">"aa"</span>);<br>     	<span class="hljs-comment">// 此时符合第一句话，字符串常量池已经存在了"aa"对象，即         // s1.intern()返回池中"aa"的引用</span><br>        <span class="hljs-comment">// 故s2的值为常量池中"aa"的引用</span><br>        String s2 = s1.intern();<br>        <span class="hljs-comment">// 由于常量池中已经有"aa"了，所以s3等于常量池					// 中"aa"的引用，即s3 == s2为true</span><br>        String s3 = <span class="hljs-string">"aa"</span>;<br>     	<span class="hljs-comment">// 由于s1的地址为堆中new出来的String对象的地址，且			// intern()无法将其引用放入常量池中，而s3的地址为常		// 量池中"aa"的引用，所以s1 == s3为false</span><br>        System.out.println(<span class="hljs-string">"s1 == s3: "</span> + (s1 == s3));<span class="hljs-comment">//false</span><br>        System.out.println(<span class="hljs-string">"s2 == s3: "</span> + (s2 == s3)); <span class="hljs-comment">// true</span><br>     	<span class="hljs-comment">// 1. 将字符常量"x"放入常量池中</span><br>        <span class="hljs-comment">// 2. 堆中创建变量"xx"并返回其引用</span><br>        String s4 = <span class="hljs-keyword">new</span> String(<span class="hljs-string">"x"</span>) + <span class="hljs-keyword">new</span> String(<span class="hljs-string">"x"</span>);<br>        <span class="hljs-comment">// 此时符合第二句话，常量池中并没有"xx"对象，且该对象已         // 经存在堆中，s4.intern()会将堆中"xx"的引用放入常量池         // 中</span><br>        s4.intern();<br>        <span class="hljs-comment">// 此时常量池中有堆中"xx"对象的引用，所以s5为堆中对             // 象"xx"的引用，即s5 == s4为true</span><br>        String s5 = <span class="hljs-string">"xx"</span>;<br>        System.out.println(<span class="hljs-string">"s4 == s5: "</span> + (s4 == s5));<br><br>    }<br>}<br></code></pre></td></tr></tbody></table></figure>
+
+</body></html>
+
+  
+    <div class="post-reward">
+    <div id="reward-button">打赏</div>
+      <div id="qr">
+        <div class="wrap">
+            
+            <div class="bg-wrap">
+              <a href="/images/zhifubao.jpg" target="_block" class="bg" style="background-image:url('/images/zhifubao.jpg')"></a>
+              支付宝
+            </div>
+            
+            
+            <div class="bg-wrap">
+                <a href="/images/weixin.png" target="_block" class="bg" style="background-image:url('/images/weixin.png')"></a>
+              微信
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  
+  <div class="post-guide">
+    <div class="item left">
+        
+    </div>
+    <div class="item right">
+        
+          <a href="/2020/03/17/redis%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/">redis实现分布式锁</a>
+        
+    </div>
+  </div>
+
+  
+
+  <div class="post-copyright">
+    <div class="auth">
+      本文作者：<a href="https://www.zzwox.top">zhou</a>
+    </div>
+    <div class="link">
+      永久链接：<a href="https://www.zzwox.top/2020/03/24/%E5%85%B3%E4%BA%8EJava%E4%B8%ADString%E7%9A%84intern()%E5%87%BD%E6%95%B0/">https://www.zzwox.top/2020/03/24/%E5%85%B3%E4%BA%8EJava%E4%B8%ADString%E7%9A%84intern()%E5%87%BD%E6%95%B0/</a>
+    </div>
+    <div class="declare">
+      版权声明：本文首发于<a href="https://www.zzwox.top">zhou</a>的博客，转载请注明出处！
+    </div>
+  </div>
+
+  <div id="comment"></div>
+
+  
+  
+</article>
         <footer>
           <div class="copyright">
             ©2020
